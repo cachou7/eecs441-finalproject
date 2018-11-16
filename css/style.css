@@ -13,18 +13,18 @@ body, html {
   opacity: 0.7;
 }
 
-.description{
+.header-description{
   position: absolute;
   top: 23%;
   padding: 2em;
   color: white;
 }
 
-.description h2, .description1 h2 {
+.header-description h2, .description h2 {
   font-size: 4em;
 }
 
-.description1 {
+.description {
   position: relative;
   top: 15%;
   padding: 2em;
@@ -63,8 +63,8 @@ body, html {
     max-width: 150em;
 }
 
-p.definition {
-  margin-right: 70%;
+p.header-definition {
+  margin-right: 63%;
 }
 
 p.definition1 {

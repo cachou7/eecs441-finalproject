@@ -180,6 +180,15 @@
         "days": "Monday-Thursday",
         "hours": "2-6pm",
         "deals": ["$3.50 \"Local30\" beers and select drafts, well coctails, and wine"]
+      },
+      { 
+        "name": "BTB Cantina",
+        "address": "1140 S University Ave.",
+        "phone": "(734)-222-3715",
+        "img_url": "assets/cantina.jpg",
+        "days": "Tuesday-Friday",
+        "hours": "5-6pm",
+        "deals": ["$3 frozen margaritas", "$1.50 Tecate cans"]
       }
     ]
   }
