@@ -1,0 +1,186 @@
+[
+  {
+    "info": [
+      { 
+        "name": "The Arena Sports Bar and Grill",
+        "address": "203 E Washington St.",
+        "phone": "(734)-222-9999",
+        "img_url": "assets/arena.jpg",
+        "days": "Tuesday-Friday",
+        "hours": "4-7pm",
+        "deals": ["$3.00 Pints and Premium Well Drinks"]
+      },
+      { 
+        "name": "The Brown Jug",
+        "address": "1204 S University Ave.",
+        "phone": "(734)-761-3355",
+        "img_url": "assets/brownjug.jpg",
+        "days": "Monday-Thursday",
+        "hours": "2-5pm",
+        "deals": ["$2.75 Miller & Leine's Tall Drafts", "$3.75 Premium Pints", "$3.75 Long Islands"]
+      },
+      { 
+        "name": "Melange",
+        "address": "312 S Main St.",
+        "phone": "(734)-222-0202",
+        "img_url": "assets/melange.jpg",
+        "days": "Monday-Friday",
+        "hours": "4-7pm",
+        "deals": ["50% glasses of wine, beer, and well cocktails"]
+      },
+      { 
+        "name": "Bar Louie",
+        "address": "401 E Liberty St #200",
+        "phone": "(734)-794-3000",
+        "img_url": "assets/barlouie.jpg",
+        "days": "Wednesday",
+        "hours": "All Day",
+        "deals": ["$1 Miller Light, Coors Light and Bud bottles","$2 Corona and Corona Light bottles all day"]
+      },
+      { 
+        "name": "Mercy's",
+        "address": "300 S Thayer St",
+        "phone": "(734)-996-3729",
+        "img_url": "assets/mercys.jpg",
+        "days": "Tuesday-Friday",
+        "hours": "4:30-6pm",
+        "deals": ["$3.50 well drinks","$4.50 martinis"]
+      },
+      { 
+        "name": "Blue Tractor",
+        "address": "207 E Washington St",
+        "phone": "(734)-222-4095",
+        "img_url": "assets/bluetractor.jpg",
+        "days": "Monday-Friday",
+        "hours": "3-6pm",
+        "deals": ["20% off draft beer"]
+      },
+      { 
+        "name": "Arbor Brewing Co.",
+        "address": "114 E. Washington St.",
+        "phone": "(734)-213-1393",
+        "img_url": "assets/arborbrewingco.jpg",
+        "days": "Monday-Friday",
+        "hours": "All Day",
+        "deals": ["$2.50 large beers", "$4+ glasses of wine", "$16+ bottles of wine"]
+      },
+      { 
+        "name": "Ashley's",
+        "address": "338 S State St.",
+        "phone": "(734)-996-9191",
+        "img_url": "assets/ashleys.jpg",
+        "days": "Monday-Friday",
+        "hours": "3-6pm",
+        "deals": ["$1 off draft beer, wine, and liquor"]
+      },
+      { 
+        "name": "Aut Bar",
+        "address": "315 Braun Ct.",
+        "phone": "(734)-994-3677",
+        "img_url": "assets/autbar.jpg",
+        "days": "Monday-Friday",
+        "hours": "4-6pm",
+        "deals": ["$2 domestic beers","$3 specialty and import beers","$2.25 well drinks"]
+      },
+      { 
+        "name": "Buffalo Wild Wings",
+        "address": "205 S State St.",
+        "phone": "(734)-997-9143",
+        "img_url": "assets/bww.jpg",
+        "days": "Monday-Friday",
+        "hours": "3-6pm",
+        "deals": ["$0.50 off tall draft beers"]
+      },
+      { 
+        "name": "Conor O'Neills",
+        "address": "318 S Main St.",
+        "phone": "(734)-665-2968",
+        "img_url": "assets/conoroneills.jpg",
+        "days": "Monday-Friday",
+        "hours": "4-7pm",
+        "deals": ["$1.50 off draft beers", "$1 off all drinks"]
+      },
+      { 
+        "name": "Good Time Charley's",
+        "address": "1140 S University Ave.",
+        "phone": "(734)-668-8411",
+        "img_url": "assets/charleys.jpg",
+        "days": "Monday-Friday",
+        "hours": "4-7pm",
+        "deals": ["$3 well drinks","$2 tall beers", "$3.50 pitchers"]
+      },
+      { 
+        "name": "Jolly Pumpkin",
+        "address": "311 S Main St.",
+        "phone": "(734)-913-2730",
+        "img_url": "assets/jollypumpkin.jpg",
+        "days": "Monday-Thursday",
+        "hours": "4-6pm",
+        "deals": ["$1 off drafts, bottles, wines, and cocktails"]
+      },
+      { 
+        "name": "The Blue Leprechaun",
+        "address": "1220 S University Ave.",
+        "phone": "(734)-665-7777",
+        "img_url": "assets/blep.jpg",
+        "days": "Monday-Friday",
+        "hours": "2-8pm",
+        "deals": ["$4 bombs","$2 domestic bottles and shot specials","$5 pitchers of Miller Lite"]
+      },
+      { 
+        "name": "The Black Pearl",
+        "address": "302 S Main St.",
+        "phone": "(734)-222-0400",
+        "img_url": "assets/blackpearl.jpg",
+        "days": "Monday-Friday",
+        "hours": "5-6pm",
+        "deals": ["$3 12oz beer","$5 well drinks"]
+      },
+      { 
+        "name": "The Garage Bar",
+        "address": "618 Church St.",
+        "phone": "(734)-995-5095",
+        "img_url": "assets/garagebar.jpg",
+        "days": "Monday-Friday",
+        "hours": "5-6pm",
+        "deals": ["$5 long islands","$4+ select 22oz drafts"]
+      },
+      { 
+        "name": "The Ravens Club",
+        "address": "207 S Main St.",
+        "phone": "(734)-214-0400",
+        "img_url": "assets/ravensclub.jpg",
+        "days": "Monday-Friday",
+        "hours": "4-6pm",
+        "deals": ["$7 cocktails","$1 off select draft beer"]
+      },
+      { 
+        "name": "Isalita",
+        "address": "314A E. Liberty St.",
+        "phone": "(734)-213-7400",
+        "img_url": "assets/ravensclub.jpg",
+        "days": "Tuesday-Friday",
+        "hours": "4:30-6:30pm",
+        "deals": ["$3 Mexican beer","$4 sangria", "$5 frozen and classico margaritas"]
+      },
+      { 
+        "name": "The Last Word",
+        "address": "301 W Huron St.",
+        "phone": "(734)-213-7400",
+        "img_url": "assets/lastword.jpg",
+        "days": "Tuesday-Saturday",
+        "hours": "5-7pm",
+        "deals": ["25% off total bill"]
+      },
+      { 
+        "name": "Hopcat",
+        "address": "311 Maynard St.",
+        "phone": "(734)-436-2875",
+        "img_url": "assets/hopcat.jpg",
+        "days": "Monday-Thursday",
+        "hours": "2-6pm",
+        "deals": ["$3.50 \"Local30\" beers and select drafts, well coctails, and wine"]
+      }
+    ]
+  }
+]
