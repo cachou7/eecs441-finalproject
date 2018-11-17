@@ -101,6 +101,7 @@ p.definition1 {
   opacity:0;
   transition:opacity 500ms ease-in-out;
 }
+
 .img-container:hover .overlay{
   opacity:0.8;
 }
