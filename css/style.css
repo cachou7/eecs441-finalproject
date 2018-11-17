@@ -22,7 +22,7 @@ body, html {
 
 .header-description{
   position: absolute;
-  top: 24%;
+  top: 28%;
   padding: 2em;
   color: white;
 }
@@ -135,4 +135,17 @@ p.definition1 {
   left:0;
   font-size: 10px;
   color: white;
+}
+
+.bar-info {
+  position: absolute;
+  margin-top: 7%;
+  font-size: 10px;
+  color: white;
+  line-height: 0.5;
+}
+
+p.bar-deals {
+  color:yellow;
+  font-size: 12px;
 }
