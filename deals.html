@@ -66,8 +66,85 @@
 <br>
  <div class="container" ng-controller="southUbarInfo">
   <div class="row">
-   <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in barResults">
-    <div id="{{ bar.name }}" class="carousel slide" data-ride="carousel" data-interval="10000">
+   <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in southUbarResults">
+    <div id="{{ bar.name }}" class="carousel slide" data-ride="carousel" data-interval="20000">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#{{ bar.name }}" data-slide-to="0" class="active"></li>
+        <li data-target="#{{ bar.name }}" data-slide-to="1"></li>
+        <li data-target="#{{ bar.name }}" data-slide-to="2"></li>
+      </ul>
+      <div class="img-container">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{ bar.img_urls[0] }}" alt="First" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ bar.img_urls[1] }}" alt="Second" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ bar.img_urls[2] }}" alt="Third" class="img-fluid">
+          </div>
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="bar-location col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                {{ bar.address }}
+              </div>
+              <div class="bar-logo col-4 col-sm-4 col-md-4 col-lg-4">
+                <img src="{{ bar.logo }}" class="img-fluid">
+              </div>
+              <div class="bar-number col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                {{ bar.phone }}
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="bar-info col-12 col-sm-12 col-md-12 col-lg-12 mb-4 text-center">
+                <p>{{ bar.days }}</p>
+                <p>{{ bar.hours }}</p>
+                <p class="bar-deals" ng-repeat="deal in bar.deals">{{ deal }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href='#{{ bar.name }}' role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href='#{{ bar.name }}' role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <br>
+
+ <!-- Main St -->
+<header class="header" id="mainst-background">
+    <div class="container">
+      <div class="mainst-description">
+        <h1>
+          <h2>main street</h2>
+          <h3>/ m&#257;n str&#275;t / (noun)</h3>
+          <!-- https://www.visitannarbor.org/play/main-street-in-ann-arbor -->
+          <p class="mainst-definition">Ann Arbor's Main Street has been widely known for decades. When Bob Seger wrote his song Mainstreet, he was inspired by Ann Arbor, where he grew up. The song recalls a simpler time and place that is distinctively Midwestern. The time and place have changed, of course, but Ann Arbor still has the feeling of Main Street USA.</p>   
+        </h1>  
+      </div>
+    </div>
+  </header>
+<br>
+ <div class="container" ng-controller="mainStbarInfo">
+  <div class="row">
+   <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in mainStbarResults">
+    <div id="{{ bar.name }}" class="carousel slide" data-ride="carousel" data-interval="20000">
       <!-- Indicators -->
       <ul class="carousel-indicators">
         <li data-target="#{{ bar.name }}" data-slide-to="0" class="active"></li>
