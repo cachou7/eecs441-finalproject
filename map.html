@@ -11,6 +11,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/script.js"></script>
+
+    <style>
+      #map {
+        margin: auto;
+        top: 5%;
+        height: 75%;
+        width: 60%; 
+        z-index: 99;
+        border: solid 5px black;
+       }
+    </style>
   </head>
 
 <body ng-app = "h2a2">
@@ -42,31 +53,76 @@
 
   <!-- header -->
   <header class="header" id="deals-background">
-    <div class="container">
-      <div class="header-description">
-        <h1>
-          <h2>ann ar&#183;bor</h2>
-          <h3>/ &aelig;n arb&#601;r / (noun)</h3>
-          <!-- http://time.com/money/collection/2018-best-places-to-live/5361499/ann-arbor-michigan/ -->
-          <p class="header-definition">Famous as home to the University of Michigan, Ann Arbor is a bustling college town, urban oasis, and cultural melting pot. The walkable downtown includes galleries, theaters, and museums, and the Ann Arbor Art Fair draws hundreds of thousands of visitors each year.</p>   
-        </h1>  
-      </div>
-    </div>
-  </header>
-  <br>
+        <!-- http://time.com/money/collection/2018-best-places-to-live/5361499/ann-arbor-michigan/ --> 
+            <!--The div element for the map -->
+        <div id="map" ng-controller="mapInfo"></div>
+          <script>
+            var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+            var dates = new Date();
+            var day = dates.getDate();
+            var month = months[dates.getMonth()];
+            var year = dates.getFullYear();
+            var today = new Date(month + ' ' + day + ', ' + year);
+            var DoW = today.getDay();
 
-<!-- South U -->
-<div class="container">
-  <div class="description">
-    <h1>
-      <h2>south u&#183;ni&#183;ver&#183;si&#183;ty</h2>
-      <h3>/ sau&#775;th y&#333;&#333;n&#601;'v&#601;rs&#601;d&#275; / (noun)</h3>
-      <!-- https://localwiki.org/ann-arbor/South_University -->
-      <p class="definition">South University Avenue is an east-west street on the southern edge of the original University of Michigan campus. It runs east from State Street; after exiting campus, it runs through a commercial area dominated by coffee shops, bars, restaurants and retail establishments that cater to high school and college students. This business area is mostly vacant during the summer and during breaks from school.</p>   
-    </h1>  
-  </div>
-</div>
-<br>
+
+            // Initialize and add the map
+            function initMap() {
+              // The location of UMich campus
+              var campus = {lat: 42.2780, lng: -83.7382};
+              // The map, centered at UMich campus
+              var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 16, center: campus});
+              var infowindow = new google.maps.InfoWindow();
+              var service = new google.maps.places.PlacesService(map);
+              service.getDetails({
+                placeId: 'ChIJl1YrpECuPIgRm1WOQgwhqzA'
+              }, function(place, status){
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                  console.log(place);
+                  var marker = new google.maps.Marker({
+                    map: map, 
+                    position: place.geometry.location
+                  });
+                  marker.addListener('click', function(){
+                    hoursArray = place.opening_hours.periods[DoW];
+
+                    var openPeriod = "";
+                    if (hoursArray.open.day === DoW && hoursArray.open.hours < 12)
+                      openPeriod = "AM";
+                    else
+                      openPeriod = "PM";
+                    var closePeriod = "";
+                    if (hoursArray.close.day === DoW)
+                      closePeriod = "PM";
+                    else
+                      closePeriod = "AM";
+
+                    var openHour = hoursArray.open.time.slice(0, 2) + ':' + hoursArray.open.time.slice(2, 4) + openPeriod;
+                    var closeHour = hoursArray.close.time.slice(0, 2) + ':' + hoursArray.close.time.slice(2, 4) + closePeriod;
+                    var todayHours = openHour + '-' + closeHour;
+                    infowindow.setContent(
+                      '<div><strong>' + place.name + '</strong><br>' +
+                      place.formatted_phone_number + '<br>' + 
+                      "Today's Hours: " + todayHours + '<br>' + 
+                      place.website + 
+                      '</div>'
+                    );
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                    setTimeout(function(){
+                      marker.setAnimation(null);
+                    }, 700);
+                    infowindow.open(map, marker);
+                  });
+                }
+              })
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfR08tezVdq9huDs5CypaeGeVR7rcUmks&libraries=places&callback=initMap">
+          </script>
+
+  </header>
  <div class="container" ng-controller="southUbarInfo">
   <div class="row">
    <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in barResults">
