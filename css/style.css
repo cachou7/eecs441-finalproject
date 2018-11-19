@@ -27,7 +27,7 @@ body, html {
   color: white;
 }
 
-.welcome-description h2, .header-description h2, .description h2 {
+.welcome-description h2, .header-description h2, .mainst-description h2, .description h2 {
   font-size: 4em;
 }
 
@@ -150,4 +150,26 @@ p.bar-deals {
   color:yellow;
   font-size: 12px;
   line-height: 0.5;
+}
+
+#mainst-background {
+  background-image: url('../assets/mainst.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: #e9e9e9;
+  height: 100%;
+  top: -200em;
+  opacity: 1.2;
+}
+
+.mainst-description{
+  position: relative;
+  top: 28%;
+  padding: 2em;
+  color: white;
+}
+
+p.mainst-definition {
+  margin-right: 28%;
 }
