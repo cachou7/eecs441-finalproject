@@ -2,11 +2,22 @@ var app = angular.module('h2a2', []);
 
 app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
 
-  $scope.barResults = {};
+  $scope.southUbarResults = {};
   //$scope.barResults = $http.get("../config.json");
   $http.get('http://localhost:8000/config.json').then(function(response) {
     //console.log(response.data);
-    $scope.barResults = response.data[0]["southU"];
-    console.log($scope.barResults);
+    $scope.southUbarResults = response.data[0]["southU"];
+    console.log(response.data);
+  });
+}]);
+
+app.controller('mainStbarInfo',[ '$scope', '$http', function($scope, $http) {
+
+  $scope.mainStbarResults = {};
+  //$scope.barResults = $http.get("../config.json");
+  $http.get('http://localhost:8000/config.json').then(function(response) {
+    //console.log(response.data);
+    $scope.mainStbarResults = response.data[1]["main"];
+    console.log(response.data);
   });
 }]);

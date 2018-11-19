@@ -56,6 +56,80 @@
   { 
     "main" : [
       { 
+        "name": "bluetractor",
+        "address": "207 E Washington St",
+        "phone": "(734)-222-4095",
+        "img_urls": ["http://localhost:8000/assets/bluetractor.jpg", "http://localhost:8000/assets/bluetractor2.JPG","http://localhost:8000/assets/bluetractor3.jpg"],
+        "logo": "http://localhost:8000/assets/bluetractor_logo.png",
+        "days": "Monday-Friday",
+        "hours": "3-6pm",
+        "deals": ["20% off draft beer"]
+      },
+      { 
+        "name": "arborbrewingco",
+        "address": "114 E Washington St.",
+        "phone": "(734)-213-1393",
+        "img_urls": ["http://localhost:8000/assets/abc.jpg", "http://localhost:8000/assets/abc2.jpg", "http://localhost:8000/assets/abc3.jpg"],
+        "logo": "http://localhost:8000/assets/abc_logo.png",
+        "days": "Monday-Friday",
+        "hours": "All Day",
+        "deals": ["$2.50 large beers and $4+ glasses of wine", "$16+ bottles of wine"]
+      },
+      { 
+        "name": "conoroneills",
+        "address": "318 S Main St.",
+        "phone": "(734)-665-2968",
+        "img_urls": ["http://localhost:8000/assets/conors.jpg","http://localhost:8000/assets/conors2.JPG","http://localhost:8000/assets/conors3.png"],
+        "logo": "http://localhost:8000/assets/conors_logo.png",
+        "days": "Monday-Friday",
+        "hours": "4-7pm",
+        "deals": ["$1.50 off draft beers, $1 off all drinks"]
+      },
+      { 
+        "name": "jollypumpkin",
+        "address": "311 S Main St.",
+        "phone": "(734)-913-2730",
+        "img_urls": ["http://localhost:8000/assets/jp.jpg","http://localhost:8000/assets/jp2.jpg","http://localhost:8000/assets/jp3.jpg"],
+        "logo": "http://localhost:8000/assets/jp_logo.png",
+        "days": "Monday-Thursday",
+        "hours": "4-6pm",
+        "deals": ["$1 off drafts, bottles, wines, and cocktails"]
+      },
+      { 
+        "name": "blackpearl",
+        "address": "302 S Main St.",
+        "phone": "(734)-222-0400",
+        "img_urls": ["http://localhost:8000/assets/blackpearl.jpg","http://localhost:8000/assets/blackpearl2.jpeg","http://localhost:8000/assets/blackpearl3.jpg"],
+        "logo": "http://localhost:8000/assets/blackpearl_logo.png",
+        "days": "Monday-Friday",
+        "hours": "5-6pm",
+        "deals": ["$3 12oz beer and $5 well drinks"]
+      },
+      { 
+        "name": "ravensclub",
+        "address": "207 S Main St.",
+        "phone": "(734)-214-0400",
+        "img_urls": ["http://localhost:8000/assets/trc.jpg","http://localhost:8000/assets/trc2.jpg","http://localhost:8000/assets/trc3.jpg"],
+        "logo": "http://localhost:8000/assets/trc_logo.png",
+        "days": "Monday-Friday",
+        "hours": "4-6pm",
+        "deals": ["$7 cocktails","$1 off select draft beer"]
+      },
+      { 
+        "name": "lastword",
+        "address": "301 W Huron St.",
+        "phone": "(734)-213-7400",
+        "img_urls": ["http://localhost:8000/assets/lastword.jpg","http://localhost:8000/assets/lastword2.jpg","http://localhost:8000/assets/lastword3.JPG"],
+        "logo": "http://localhost:8000/assets/lastword_logo.png",
+        "days": "Tuesday-Saturday",
+        "hours": "5-7pm",
+        "deals": ["25% off total bill"]
+      }
+    ]
+  },
+  { 
+    "kerrytown" : [
+      { 
         "name": "The Arena Sports Bar and Grill",
         "address": "203 E Washington St.",
         "phone": "(734)-222-9999",
