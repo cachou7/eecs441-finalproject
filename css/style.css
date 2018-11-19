@@ -149,4 +149,5 @@ p.definition1 {
 p.bar-deals {
   color:yellow;
   font-size: 12px;
+  line-height: 0.5;
 }

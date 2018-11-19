@@ -2,51 +2,51 @@
   {
     "southU": [
       { 
-        "name": "Good Time Charley's",
+        "name": "charleys",
         "address": "1140 S University Ave.",
         "phone": "(734)-668-8411",
-        "img_urls": ["assets/charleys.jpg","assets/charleys1.jpg", "assets/charleys2.jpg"],
-        "logo": "assets/charleys_logo_transparent.png",
+        "img_urls": ["http://localhost:8000/assets/charleys.jpg","http://localhost:8000/assets/charleys2.jpg", "http://localhost:8000/assets/charleys3.jpg"],
+        "logo": "http://localhost:8000/assets/charleys_logo_transparent.png",
         "days": "Monday-Friday",
         "hours": "4-7pm",
         "deals": ["$3 well drinks, $2 tall beers, $3.50 pitchers"]
       },
       { 
-        "name": "The Blue Leprechaun",
+        "name": "blep",
         "address": "1220 S University Ave.",
         "phone": "(734)-665-7777",
-        "img_urls": ["assets/blep.jpg","assets/blep2.jpg", "assets/blep3.jpg"],
-        "logo": "assets/blep_logo.png",
+        "img_urls": ["http://localhost:8000/assets/blep.jpg","http://localhost:8000/assets/blep2.jpg", "http://localhost:8000/assets/blep3.jpeg"],
+        "logo": "http://localhost:8000/assets/blep_logo.png",
         "days": "Monday-Friday",
         "hours": "2-8pm",
         "deals": ["$2 domestic bottles and shot specials","$4 bombs and $5 pitchers of Miller Lite"]
       },
       { 
-        "name": "The Brown Jug",
+        "name": "brownjug",
         "address": "1204 S University Ave.",
         "phone": "(734)-761-3355",
-        "img_urls": ["assets/brownjug.jpg","assets/brownjug2.jpg", "assets/brownjug3.jpg"],
-        "logo": "assets/brownjug_logo.png",
+        "img_urls": ["http://localhost:8000/assets/brownjug.jpg","http://localhost:8000/assets/brownjug2.jpg", "http://localhost:8000/assets/brownjug3.JPG"],
+        "logo": "http://localhost:8000/assets/brownjug_logo.png",
         "days": "Monday-Thursday",
         "hours": "2-5pm",
         "deals": ["$2.75 Miller & Leine's Tall Drafts", "$3.75 Premium Pints and $3.75 Long Islands"]
       },
       { 
-        "name": "The Garage Bar",
+        "name": "garagebar",
         "address": "618 Church St.",
         "phone": "(734)-995-5095",
-        "img_urls": ["assets/garagebar.jpg", "assets/garagebar2.jpg", "assets/garagebar3.jpg"],
-        "logo": "assets/garagebar_logo.png",
+        "img_urls": ["http://localhost:8000/assets/garagebar.jpg", "http://localhost:8000/assets/garagebar2.jpg", "http://localhost:8000/assets/garagebar3.jpg"],
+        "logo": "http://localhost:8000/assets/garagebar_logo.png",
         "days": "Monday-Friday",
         "hours": "5-6pm",
         "deals": ["$5 long islands and $4+ select 22oz drafts"]
       },
       { 
-        "name": "BTB Cantina",
+        "name": "cantina",
         "address": "1140 S University Ave.",
         "phone": "(734)-222-3715",
-        "img_urls": ["assets/cantina.jpg","assets/cantina2.jpg","assets/cantina3.jpg"],
-        "logo": "assets/cantina_logo.png",
+        "img_urls": ["http://localhost:8000/assets/cantina.jpg","http://localhost:8000/assets/cantina2.jpg","http://localhost:8000/assets/cantina3.jpg"],
+        "logo": "http://localhost:8000/assets/cantina_logo.png",
         "days": "Tuesday-Friday",
         "hours": "5-6pm",
         "deals": ["$3 frozen margaritas and $1.50 Tecate cans"]
