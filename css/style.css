@@ -201,3 +201,22 @@ p.mainst-definition {
   font-family: 'Kreon', serif;
   font-size: 18px;
 }
+
+.todayLoc {
+  text-align: center;
+}
+
+.todayDeals {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.todayLogo {
+  height: 150px; 
+  display: block;
+  margin: auto
+}
+
+.noMarg {
+  margin-bottom: 0;
+}

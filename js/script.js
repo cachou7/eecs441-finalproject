@@ -18,6 +18,8 @@ $(document).ready(function(){
 var app = angular.module('h2a2', []);
 
 app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
+  var d = new Date();
+  $scope.dayOfWeek = d.getDay();
 
   $scope.southUbarResults = {};
   //$scope.barResults = $http.get("../config.json");
@@ -29,6 +31,10 @@ app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
 }]);
 
 app.controller('mainStbarInfo',[ '$scope', '$http', function($scope, $http) {
+  var d = new Date();
+  $scope.dayOfWeek = d.getDay();
+  
+  $scope.southUbarResults = {};
 
   $scope.mainStbarResults = {};
   //$scope.barResults = $http.get("../config.json");
@@ -40,6 +46,10 @@ app.controller('mainStbarInfo',[ '$scope', '$http', function($scope, $http) {
 }]);
 
 app.controller('kerrytownbarInfo',[ '$scope', '$http', function($scope, $http) {
+  var d = new Date();
+  $scope.dayOfWeek = d.getDay();
+  
+  $scope.southUbarResults = {};
 
   $scope.kerrytownbarResults = {};
   //$scope.barResults = $http.get("../config.json");
