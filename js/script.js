@@ -21,3 +21,14 @@ app.controller('mainStbarInfo',[ '$scope', '$http', function($scope, $http) {
     console.log(response.data);
   });
 }]);
+
+app.controller('kerrytownbarInfo',[ '$scope', '$http', function($scope, $http) {
+
+  $scope.kerrytownbarResults = {};
+  //$scope.barResults = $http.get("../config.json");
+  $http.get('http://localhost:8000/config.json').then(function(response) {
+    //console.log(response.data);
+    $scope.kerrytownbarResults = response.data[2]["kerrytown"];
+    console.log(response.data);
+  });
+}]);
