@@ -55,6 +55,9 @@
         </li>  
         <li class="nav-item"> 
           <a class="nav-link text-center" data-value="map" href="map.html">Locations</a>       
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link text-center" data-value="today" href="today.html">Today's Deals</a>       
         </li> 
       </ul> 
     </div>
@@ -105,7 +108,7 @@
       <div class="todayDeals">
         <h5>{{ bar.full_name }}</h5>
         <p>{{ bar.hours }}</p>
-        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
       </div>
       
     </div>
@@ -120,9 +123,9 @@
      <div style="" class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in mainStbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
       <img class="todayLogo" src="{{ bar.logo }}">
       <div class="todayDeals">
-        <h5>{{ bar.full_name }}</h5>
-        <p>{{ bar.hours }}</p>
-        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+        <h5 class="todayDeals">{{ bar.full_name }}</h5>
+        <p class="todayDeals">{{ bar.hours }}</p>
+        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
       </div>
 
      </div>
@@ -136,9 +139,9 @@
      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in kerrytownbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
       <img class="todayLogo" src="{{ bar.logo }}">
       <div class="todayDeals">
-        <h5>{{ bar.full_name }}</h5>
-        <p>{{ bar.hours }}</p>
-        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+        <h5 class="todayDeals">{{ bar.full_name }}</h5>
+        <p class="todayDeals">{{ bar.hours }}</p>
+        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
       </div>
         
       

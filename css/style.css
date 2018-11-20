@@ -216,3 +216,7 @@ p.mainst-definition {
   display: block;
   margin: auto
 }
+
+.noMarg {
+  margin-bottom: 0;
+}
