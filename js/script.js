@@ -7,23 +7,12 @@ $(document).ready(function(){
   })
 });
 
-// hide navbar
 $(document).ready(function(){
-  // hide .navbar first
-  $(".navbar").hide();
-
-  // fade in .navbar
-  $(function () {
-    $(window).scroll(function () {
-      // set distance user needs to scroll before we start fadeIn
-      if ($(this).scrollTop() > 200) {
-        $('.navbar').fadeIn();
-      } 
-      else {
-        $('.navbar').fadeOut();
-      }
-    });
-  });
+  $("#header-navbar a").click(function(){
+    $("body,html").animate({
+      scrollTop:$("#" + $(this).data('value')).offset().top
+    },1000)
+  })
 });
 
 var app = angular.module('h2a2', []);

@@ -175,3 +175,22 @@ p.bar-deals {
 p.mainst-definition {
   margin-right: 28%;
 }
+
+.header-link {
+  color:grey;
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+}
+
+.header-link:hover {
+  color:white;
+  text-decoration: none;
+}
+
+#header-navbar {
+  position: absolute;
+  top: 12%;
+  width: 60%;
+  left: 22%;
+}
