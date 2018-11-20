@@ -3,8 +3,27 @@ $(document).ready(function(){
   $(".navbar a").click(function(){
     $("body,html").animate({
       scrollTop:$("#" + $(this).data('value')).offset().top
-    },3000)
+    },1000)
   })
+});
+
+// hide navbar
+$(document).ready(function(){
+  // hide .navbar first
+  $(".navbar").hide();
+
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+      // set distance user needs to scroll before we start fadeIn
+      if ($(this).scrollTop() > 200) {
+        $('.navbar').fadeIn();
+      } 
+      else {
+        $('.navbar').fadeOut();
+      }
+    });
+  });
 });
 
 var app = angular.module('h2a2', []);
