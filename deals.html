@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -15,14 +16,14 @@
 
 <body ng-app = "h2a2">
   <!-- navbar -->  
-  <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">  
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">  
     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarLocations">     
       <ul class="navbar-nav mr-4">
         <li class="nav-item">
           <a class="nav-link text-center" data-value="home" href="#">Home</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link text-center" data-value="south"href="#">South U</a>    
+          <a class="nav-link text-center" data-value="southu" href="#">South U</a>    
         </li>
         <li class="nav-item"> 
           <a class="nav-link text-center" data-value="main" href="#">Main St</a>         
@@ -34,7 +35,7 @@
           <a class="nav-link text-center" data-value="liberty" href="#">Liberty</a>       
         </li> 
         <li class="nav-item"> 
-          <a class="nav-link text-center" data-value="liberty" href="map.html">Locations</a>       
+          <a class="nav-link text-center" data-value="map" href="map.html">Locations</a>       
         </li> 
       </ul> 
     </div>
@@ -42,7 +43,7 @@
 
   <!-- header -->
   <header class="header" id="deals-background">
-    <div class="container">
+    <div class="container" id="home">
       <div class="header-description">
         <h1>
           <h2>ann ar&#183;bor</h2>
@@ -56,7 +57,7 @@
   <br>
 
 <!-- South U -->
-<div class="container">
+<div class="container" id="southu">
   <div class="description">
     <h1>
       <h2>south u&#183;ni&#183;ver&#183;si&#183;ty</h2>
@@ -131,7 +132,7 @@
 
  <!-- Main St -->
 <header class="header" id="mainst-background">
-    <div class="container">
+    <div class="container" id="main">
       <div class="mainst-description">
         <h1>
           <h2>main street</h2>
@@ -206,7 +207,7 @@
  </div>
 
  <!-- Kerrytown -->
- <div class="container">
+ <div class="container" id="kerrytown">
   <div class="description">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-7">

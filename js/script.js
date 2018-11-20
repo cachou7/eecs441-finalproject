@@ -1,3 +1,12 @@
+// Smooth scrolling
+$(document).ready(function(){
+  $(".navbar a").click(function(){
+    $("body,html").animate({
+      scrollTop:$("#" + $(this).data('value')).offset().top
+    },3000)
+  })
+});
+
 var app = angular.module('h2a2', []);
 
 app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
