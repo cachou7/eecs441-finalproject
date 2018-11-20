@@ -181,6 +181,7 @@ p.mainst-definition {
   text-decoration: none;
   font-family: 'Shadows Into Light', cursive;
   font-size: 25px;
+  padding: 5%;
 }
 
 .header-link:hover {
@@ -193,4 +194,10 @@ p.mainst-definition {
   top: 12%;
   width: 60%;
   left: 22%;
+}
+
+.navbar-nav > li{
+  padding-left:70px;
+  font-family: 'Kreon', serif;
+  font-size: 18px;
 }
