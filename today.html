@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>H2A2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // hide navbar
+      $(document).ready(function(){
+      // hide .navbar first
+      $(".navbar").hide();
+
+      // fade in .navbar
+      $(function () {
+        $(window).scroll(function () {
+          // set distance user needs to scroll before we start fadeIn
+          if ($(this).scrollTop() > 200) {
+            $('.navbar').fadeIn();
+          } 
+          else {
+            $('.navbar').fadeOut();
+          }
+        });
+      });
+    });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  </head>
+
+<body ng-app="h2a2" data-spy="scroll" data-target="#navbarLocations">
+
+  <!-- navbar -->  
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">  
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarLocations"> 
+      <ul class="navbar-nav mr-7">
+        <li class="nav-item">
+          <a class="nav-link text-center" data-value="home" href="#">Home</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link text-center" data-value="southu" href="#">South U</a>    
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link text-center" data-value="main" href="#">Main St</a>         
+        </li>   
+        <li class="nav-item">  
+          <a class="nav-link text-center" data-value="kerrytown" href="#">Kerrytown</a>       
+        </li>  
+        <li class="nav-item"> 
+          <a class="nav-link text-center" data-value="map" href="map.html">Locations</a>       
+        </li> 
+      </ul> 
+    </div>
+  </nav>
+
+  <!-- header -->
+  <header class="header" id="deals-background">
+    <div class="container" id="home">
+      <div class="row" id="header-navbar">
+        <div class="col-3 col-sm-2 col-md-12 col-lg-1">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+          <a data-value="home" href="#" class="header-link">Home</a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+          <a data-value="southu" href="#" class="header-link">South U</a> 
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+          <a data-value="main" href="#" class="header-link">Main St</a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+          <a data-value="kerrytown" href="#" class="header-link">Kerrytown</a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+          <a data-value="map" href="map.html" class="header-link">Locations</a> 
+        </div>
+        <div class="col-12 col-sm-2 col-md-2 col-lg-1">
+        </div>
+      </div>
+
+      
+    </div>
+  </header>
+  <br>
+
+<!-- South U -->
+<div class="container" id="southu">
+  <h2>TODAY'S DEALS</h2>
+</div>
+
+<h3 class="todayLoc">South U</h3>
+<br>
+ <div class="container" ng-controller="southUbarInfo">
+  <div class="row">
+   <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in southUbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+    <div id="{{ bar.name }}" class="carousel slide" data-ride="carousel" data-interval="20000">
+      <img class="todayLogo" src="{{ bar.logo }}">
+      <div class="todayDeals">
+        <h5>{{ bar.full_name }}</h5>
+        <p>{{ bar.hours }}</p>
+        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+      </div>
+      
+    </div>
+   </div>
+  </div>
+ </div>
+ <br>
+ <h3 class="todayLoc">Main St</h3>
+  <br>
+   <div class="container" ng-controller="mainStbarInfo">
+    <div class="row">
+     <div style="" class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in mainStbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+      <img class="todayLogo" src="{{ bar.logo }}">
+      <div class="todayDeals">
+        <h5>{{ bar.full_name }}</h5>
+        <p>{{ bar.hours }}</p>
+        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+      </div>
+
+     </div>
+    </div>
+   </div>
+   <br>
+ <h3 class="todayLoc">Kerrytown</h3>
+  <br>
+   <div class="container" ng-controller="kerrytownbarInfo">
+    <div class="row">
+     <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in kerrytownbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+      <img class="todayLogo" src="{{ bar.logo }}">
+      <div class="todayDeals">
+        <h5>{{ bar.full_name }}</h5>
+        <p>{{ bar.hours }}</p>
+        <p ng-repeat="deal in bar.deals">{{ deal }}</p>
+      </div>
+        
+      
+     </div>
+    </div>
+   </div>
+   <br>
+
+ 
+</body>
+</html>
