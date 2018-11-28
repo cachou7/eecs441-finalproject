@@ -72,7 +72,7 @@ app2.controller('allInfo',[ '$scope', '$http', function($scope, $http) {
   var days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 
   $("#" + days[$scope.dayOfWeek]).addClass("btn-primary");
-  $("#" + days[$scope.dayOfWeek]).removeClass("btn-primary");
+  $("#" + days[$scope.dayOfWeek]).removeClass("btn-dark");
 
   $scope.dayHead = "Today's Deals"
 
