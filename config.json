@@ -11,7 +11,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-7pm",
-        "deals": ["$3 well drinks, $2 tall beers, $3.50 pitchers"]
+        "deals": ["$3 well drinks, $2 tall beers, $3.50 pitchers"],
+        "placeid": "ChIJeY2nMUSuPIgR23r6dNopAv0"
       },
       { 
         "name": "blep",
@@ -23,7 +24,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "2-8pm",
-        "deals": ["$2 domestic bottles and shot specials","$4 bombs and $5 pitchers of Miller Lite"]
+        "deals": ["$2 domestic bottles and shot specials","$4 bombs and $5 pitchers of Miller Lite"],
+        "placeid": "ChIJFcckUUSuPIgRwZ7I82nO19E"
       },
       { 
         "name": "brownjug",
@@ -35,7 +37,8 @@
         "days": "Monday-Thursday",
         "day_arr": [false, true, true, true, true, false, false],
         "hours": "2-5pm",
-        "deals": ["$2.75 Miller & Leine's Tall Drafts", "$3.75 Premium Pints and $3.75 Long Islands"]
+        "deals": ["$2.75 Miller & Leine's Tall Drafts", "$3.75 Premium Pints and $3.75 Long Islands"],
+        "placeid": "ChIJgxFrSUSuPIgRNMHA3whSTiA"
       },
       { 
         "name": "garagebar",
@@ -47,7 +50,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "5-6pm",
-        "deals": ["$5 long islands and $4+ select 22oz drafts"]
+        "deals": ["$5 long islands and $4+ select 22oz drafts"],
+        "placeid": "ChIJNcYgzEWuPIgRO70VE2u5f6s"
       },
       { 
         "name": "cantina",
@@ -75,7 +79,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
-        "deals": ["20% off draft beer"]
+        "deals": ["20% off draft beer"],
+        "placeid": "ChIJpV_z0T2uPIgRoG99QZpngLA"
       },
       { 
         "name": "arborbrewingco",
@@ -87,7 +92,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "All Day",
-        "deals": ["$2.50 large beers", "$4+ glasses of wine", "$16+ bottles of wine"]
+        "deals": ["$2.50 large beers", "$4+ glasses of wine", "$16+ bottles of wine"],
+        "placeid": "ChIJja88sj2uPIgRNqaMZdFWKIA"
       },
       { 
         "name": "conoroneills",
@@ -163,7 +169,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-6pm",
-        "deals": ["$2 domestic beers, $3 specialty & import beers","$2.25 well drinks"]
+        "deals": ["$2 domestic beers, $3 specialty & import beers","$2.25 well drinks"],
+        "placeid": "ChIJnZvJbBauPIgRhztNmzsq5wc"
       },
       { 
         "name": "caseys",
@@ -187,7 +194,8 @@
         "days": "Tuesday-Friday",
         "day_arr": [false, false, true, true, true, true, false],
         "hours": "3-6pm",
-        "deals": ["$1 off all drinks"]
+        "deals": ["$1 off all drinks"],
+        "placeid": "ChIJVVVV1hWuPIgRnnUCKv2f8xM"
       }
     ]
   },
@@ -211,17 +219,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
-        "deals": ["$1 off draft beer, wine, and liquor"]
-      },
-      { 
-        "name": "Aut Bar",
-        "address": "315 Braun Ct.",
-        "phone": "(734)-994-3677",
-        "img_url": "assets/autbar.jpg",
-        "days": "Monday-Friday",
-        "day_arr": [false, true, true, true, true, true, false],
-        "hours": "4-6pm",
-        "deals": ["$2 domestic beers","$3 specialty and import beers","$2.25 well drinks"]
+        "deals": ["$1 off draft beer, wine, and liquor"],
+        "placeid": "ChIJl1YrpECuPIgRm1WOQgwhqzA"
       },
       { 
         "name": "Buffalo Wild Wings",
@@ -251,7 +250,8 @@
         "days": "Monday-Thursday",
         "day_arr": [false, true, true, true, true, false, false],
         "hours": "2-6pm",
-        "deals": ["$3.50 \"Local30\" beers and select drafts, well coctails, and wine"]
+        "deals": ["$3.50 \"Local30\" beers and select drafts, well coctails, and wine"],
+        "placeid": "ChIJ-6EpZD-uPIgR0O9Zn3hKH_I"
       }
     ]
   }
