@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   </head>
 
-<body ng-app="h2a2" data-spy="scroll" data-target="#navbarLocations">
+<body ng-app="dayPick" data-spy="scroll" data-target="#navbarLocations">
 
   <!-- navbar -->  
   <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">  
@@ -64,7 +64,7 @@
   </nav>
 
   <!-- header -->
-  <header class="header" id="deals-background">
+  <header class="header" style="background-position: top; height: 230px;" id="deals-background">
     <div class="container" id="home">
       <div class="row" id="header-navbar">
         <div class="col-3 col-sm-2 col-md-12 col-lg-1">
@@ -91,63 +91,88 @@
       
     </div>
   </header>
-  <br>
-
-<!-- South U -->
-<div class="container" id="southu">
-  <h2>TODAY'S DEALS</h2>
-</div>
-
-<h3 class="todayLoc">South U</h3>
 <br>
- <div class="container" ng-controller="southUbarInfo">
-  <div class="row">
-   <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in southUbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
-    <div id="{{ bar.name }}" class="carousel slide" data-ride="carousel" data-interval="20000">
-      <img class="todayLogo" src="{{ bar.logo }}">
-      <div class="todayDeals">
-        <h5>{{ bar.full_name }}</h5>
-        <p>{{ bar.hours }}</p>
-        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
-      </div>
-      
-    </div>
-   </div>
-  </div>
- </div>
- <br>
- <h3 class="todayLoc">Main St</h3>
-  <br>
-   <div class="container" ng-controller="mainStbarInfo">
-    <div class="row">
-     <div style="" class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in mainStbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
-      <img class="todayLogo" src="{{ bar.logo }}">
-      <div class="todayDeals">
-        <h5 class="todayDeals">{{ bar.full_name }}</h5>
-        <p class="todayDeals">{{ bar.hours }}</p>
-        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
-      </div>
+<div ng-controller="allInfo">
 
-     </div>
+  <div class="container" id="southu">
+    <h2 ng-bind="dayHead" style="text-align: center; font-size: 5em; margin-bottom: 50px;">TODAY'S DEALS</h2>
+  </div>
+  <div style="text-align: center;">
+    <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+      <button id="mon" type="button" ng-click="chooseDay(1)" class="btn btn-dark">Mon</button>
+      <button id="tue" type="button" ng-click="chooseDay(2)" class="btn btn-dark">Tue</button>
+      <button id="wed" type="button" ng-click="chooseDay(3)" class="btn btn-dark">Wed</button>
+      <button id="thu" type="button" ng-click="chooseDay(4)" class="btn btn-dark">Thu</button>
+      <button id="fri" type="button" ng-click="chooseDay(5)" class="btn btn-dark">Fri</button>
+      <button id="sat" type="button" ng-click="chooseDay(6)" class="btn btn-dark">Sat</button>
+      <button id="sun" type="button" ng-click="chooseDay(0)" class="btn btn-dark">Sun</button>
     </div>
-   </div>
-   <br>
- <h3 class="todayLoc">Kerrytown</h3>
+  </div>
+
+  <!-- South U -->
+ 
+
+  <h3 class="todayLoc">South U</h3>
   <br>
-   <div class="container" ng-controller="kerrytownbarInfo">
+   <div class="container"  >
     <div class="row">
-     <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in kerrytownbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
-      <img class="todayLogo" src="{{ bar.logo }}">
-      <div class="todayDeals">
-        <h5 class="todayDeals">{{ bar.full_name }}</h5>
-        <p class="todayDeals">{{ bar.hours }}</p>
-        <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
-      </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in southUbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+      <div class="todayBack">
+
+        <img class="todayLogo" src="{{ bar.logo }}" ng-click="friday();" >
+        <div class="todayDeals">
+          <h5>{{ bar.full_name }}</h5>
+          <p>{{ bar.hours }}</p>
+          <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
+
         
-      
+      </div>
      </div>
     </div>
    </div>
+
+   <br>
+   <h3 class="todayLoc">Main St</h3>
+    <br>
+     <div class="container" id="ref">
+      <div class="row">
+       <div style="" class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in mainStbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+        <div class="todayBack">
+        <img class="todayLogo" src="{{ bar.logo }}">
+        
+          <div class="todayDeals">
+            <h5 class="todayDeals">{{ bar.full_name }}</h5>
+            <p class="todayDeals">{{ bar.hours }}</p>
+            <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
+          </div>
+        </div>
+
+       </div>
+      </div>
+     </div>
+   
+     <br>
+   <h3 class="todayLoc">Kerrytown</h3>
+    <br>
+  <div >
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="bar in kerrytownbarResults" ng-if="bar.day_arr[dayOfWeek] == true">
+        <div class="todayBack">
+        <img class="todayLogo" ng-click="friday();" src="{{ bar.logo }}">
+        <div class="todayDeals">
+          <h5 class="todayDeals">{{ bar.full_name }}</h5>
+          <p class="todayDeals">{{ bar.hours }}</p>
+          <p class="noMarg" ng-repeat="deal in bar.deals">{{ deal }}</p>
+        </div>
+        </div>
+          
+        
+       </div>
+      </div>
+     </div>
+   </div>
+ </div>
    <br>
 
  
