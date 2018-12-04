@@ -144,12 +144,29 @@ app.controller('mapInfo',[ '$scope', '$http', function($scope, $http) {
     var DoW = today.getDay();
 
     //Map only allows a certian amount of requests...so limit to these restaurants
-    var inRestaurants = ["Ashley's", "autbar", "charleys", "blep", "arborbrewingco", "lunchroom", "bluetractor", "brownjug", "garagebar", "Hopcat"];
+    var inRestaurants = [];
 
     //Get locations
     $http.get('http://localhost:8000/config.json').then(function(response) {
       var locations = response.data.slice();
-
+      var count = 0;
+      for (index in locations){
+        for (area in locations[index]){
+          for (i in locations[index][area]){
+            if (locations[index][area][i].day_arr[DoW])
+              inRestaurants.push(count);
+            count++;
+          }
+        }
+      }
+      var rands = [];
+      var prevCount = count;
+      for (var i = 0; i < prevCount-10; i++){
+        inRestaurants.splice((Math.floor(Math.random()*(count+1))),1);
+        count--;
+      }
+      var interation = 0;
+      var deals = [];
       // The location of UMich campus
       var campus = {lat: 42.2780, lng: -83.7382};
       // The map, centered at UMich campus
@@ -160,8 +177,12 @@ app.controller('mapInfo',[ '$scope', '$http', function($scope, $http) {
       for (index in locations){
         for (area in locations[index]){
           for (i in locations[index][area]){
-            var restaurant = locations[index][area][i];
-            if (inRestaurants.indexOf(restaurant.name) >= 0){
+            if (inRestaurants.includes(interation)){
+              var restaurant = locations[index][area][i];
+              deals[restaurant.placeid] = restaurant.deals[0];
+                for (var i = 1; i < restaurant.deals.length; i++){
+                  deals[restaurant.placeid] += ", " + restaurant.deals[i];
+              }  
               service.getDetails({
                 placeId: restaurant.placeid
               }, function(place, status){
@@ -170,8 +191,8 @@ app.controller('mapInfo',[ '$scope', '$http', function($scope, $http) {
                     map: map, 
                     position: place.geometry.location
                   });
-                  marker.addListener('click', function(){
-                    hoursArray = place.opening_hours.periods[DoW];
+                  marker.addListener('click', function(){ 
+                  hoursArray = place.opening_hours.periods[DoW];
 
                     var openPeriod = "";
                     if (hoursArray.open.day === DoW && hoursArray.open.hours < 12)
@@ -191,11 +212,13 @@ app.controller('mapInfo',[ '$scope', '$http', function($scope, $http) {
                     if (openHour == "0:00PM")
                       openHour = "12:00PM";
                     var todayHours = openHour + '-' + closeHour;
+                    console.log(place);
                     infowindow.setContent(
-                      '<div><strong>' + place.name + '</strong><br>' +
+                      '<div><strong>' + place.name + ' </strong><br>' +
                       place.formatted_phone_number + '<br>' + 
+                      place.website + '<br>' +
                       "Today's Hours: " + todayHours + '<br>' + 
-                      place.website + 
+                      "Today's Deals: "  + deals[place.reference] +
                       '</div>'
                     );
                     marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -207,6 +230,7 @@ app.controller('mapInfo',[ '$scope', '$http', function($scope, $http) {
                 }
               })
             }
+            interation++;
           }
         }
       }    

@@ -191,9 +191,9 @@ p.mainst-definition {
 
 #header-navbar {
   position: absolute;
-  top: 12%;
+  top: 10%;
   width: 60%;
-  left: 22%;
+  text-align: center;
 }
 
 .navbar-nav > li{
@@ -230,3 +230,30 @@ p.mainst-definition {
 .noMarg {
   margin-bottom: 0;
 }
+
+.scroller{
+  position: absolute; 
+  display: block;
+  height: 80px; 
+  bottom: 5%; 
+  margin-left: 50%; 
+  margin-right: auto;
+  z-index: 97;
+  opacity: 1;
+  border: 1px solid white;
+  border-radius: 50%
+}
+.scroller:hover{
+  opacity: .9;
+}
+.scrollerB{
+  position: absolute; 
+  display: block;
+  height: 80px; 
+  bottom: 5%; 
+  margin-left: 50%; 
+  margin-right: auto;
+  z-index: 2;
+}
+
+

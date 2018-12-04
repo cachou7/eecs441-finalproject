@@ -63,7 +63,8 @@
         "days": "Tuesday-Friday",
         "day_arr": [false, false, true, true, true, true, false],
         "hours": "5-6pm",
-        "deals": ["$3 frozen margaritas and $1.50 Tecate cans"]
+        "deals": ["$3 frozen margaritas and $1.50 Tecate cans"],
+        "placeid": "ChIJeY2nMUSuPIgRbA4Mf8FEcNQ"
       }
     ]
   },
@@ -105,7 +106,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-7pm",
-        "deals": ["$1.50 off draft beers, $1 off all drinks"]
+        "deals": ["$1.50 off draft beers, $1 off all drinks"],
+        "placeid": "ChIJCzlHZzyuPIgRzjVrwaV1lUs"
       },
       { 
         "name": "jollypumpkin",
@@ -117,7 +119,8 @@
         "days": "Monday-Thursday",
         "day_arr": [false, true, true, true, true, false, false],
         "hours": "4-6pm",
-        "deals": ["$1 off drafts, bottles, wines, and cocktails"]
+        "deals": ["$1 off drafts, bottles, wines, and cocktails"],
+        "placeid": "ChIJzQ_7XDyuPIgReuoJA541_NA"
       },
       { 
         "name": "blackpearl",
@@ -129,7 +132,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "5-6pm",
-        "deals": ["$3 12oz beer and $5 well drinks"]
+        "deals": ["$3 12oz beer and $5 well drinks"],
+        "placeid": "ChIJK3b_WjyuPIgRYJeutjpr3Xo"
       },
       { 
         "name": "ravensclub",
@@ -141,7 +145,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-6pm",
-        "deals": ["$7 cocktails","$1 off select draft beer"]
+        "deals": ["$7 cocktails","$1 off select draft beer"],
+        "placeid": "ChIJ_4VJrT2uPIgR1IKkJ4D65F8"
       },
       { 
         "name": "lastword",
@@ -153,7 +158,8 @@
         "days": "Tuesday-Saturday",
         "day_arr": [false, false, true, true, true, true, true],
         "hours": "5-7pm",
-        "deals": ["25% off total bill"]
+        "deals": ["25% off total bill"],
+        "placeid": "ChIJYZxROD2uPIgRdPRUUywbpo8"
       }
     ]
   },
@@ -182,7 +188,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
-        "deals": ["$1 off draft beers"]
+        "deals": ["$1 off draft beers"],
+        "placeid": "ChIJv3u0hBOuPIgRLUh0a7-KhQQ"
       },
       { 
         "name": "lunchroom",
@@ -209,7 +216,8 @@
         "days": "Wednesday",
         "day_arr": [false, false, false, true, false, false, false],
         "hours": "All Day",
-        "deals": ["$1 Miller Light, Coors Light and Bud bottles","$2 Corona and Corona Light bottles all day"]
+        "deals": ["$1 Miller Light, Coors Light and Bud bottles","$2 Corona and Corona Light bottles all day"],
+        "placeid": "ChIJdc9KAj-uPIgRF_bGdp6gks8"
       },
       { 
         "name": "Ashley's",
@@ -230,7 +238,8 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
-        "deals": ["$0.50 off tall draft beers"]
+        "deals": ["$0.50 off tall draft beers"],
+        "placeid": "ChIJ0ddXY0CuPIgRESjalhDyTPk"
       },
       { 
         "name": "Isalita",
@@ -240,7 +249,8 @@
         "days": "Tuesday-Friday",
         "day_arr": [false, false, true, true, true, true, false],
         "hours": "4:30-6:30pm",
-        "deals": ["$3 Mexican beer","$4 sangria", "$5 frozen and classico margaritas"]
+        "deals": ["$3 Mexican beer","$4 sangria", "$5 frozen and classico margaritas"],
+        "placeid": "ChIJxakU8D6uPIgRDkVcXiJ1mA4"
       },
       { 
         "name": "Hopcat",
