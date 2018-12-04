@@ -17,6 +17,15 @@ $(document).ready(function(){
 
 var app = angular.module('h2a2', []);
 
+app.controller('scrollerController', [ '$scope', '$http', function($scope, $location, $anchorScroll){
+  $scope.move = function($event){
+    $event.preventDefault();
+    $('html,body').animate({
+      scrollTop: $("#southu").offset().top},
+      'slow');
+  };
+}]);
+
 app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
   var d = new Date();
   $scope.dayOfWeek = d.getDay();
