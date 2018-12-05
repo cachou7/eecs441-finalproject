@@ -189,10 +189,26 @@ p.mainst-definition {
   text-decoration: none;
 }
 
+.map-header-link {
+  color:grey;
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  padding: 5%;
+}
+
+.map-header-link:hover {
+  color:blue;
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  padding: 5%;
+}
+
 #header-navbar {
   position: absolute;
   top: 10%;
-  width: 60%;
+  width: 100%;
   text-align: center;
 }
 
