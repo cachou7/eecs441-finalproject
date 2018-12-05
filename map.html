@@ -30,10 +30,10 @@
 
 <body ng-app = "h2a2">
   <header class="header">
-    <div class="container" id="home">
+    <div class="container" id="home"">
       <div id="header-navbar">
-        <a class="map-header-link" data-value="home" href="deals.html" style="margin-left:-22%">Home</a>
-        <a class="map-header-link" data-value="map" href="map.html">Map View</a>
+        <a class="map-header-link" data-value="home" href="deals.html">Home</a>
+        <a class="map-header-link" data-value="map" href="map.html" style="text-align: center">Map View</a>
         <a class="map-header-link" data-value="todaysdeals" href="today.html">Today's Deals</a>  
         
       </div>
@@ -43,7 +43,17 @@
       <div class="row" style="height: 90%">
         <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
           <br><br><span style="font-family: 'Abel', sans-serif;font-size: 20px">Choose an area to explore:</span><br><br>
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="southu-map">South U</button><br>
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="collapse" data-target=".multi-collapse" id="southu-map">South U</button><br>
+<!--           <div class="row" ng-controller="southUbarInfo">
+            <div class="col" ng-repeat="bar in southUbarResults">
+              <div class="collapse multi-collapse bar-cards" id="multiCollapseExample1">
+                <div class="card card-body">
+                  {{ bar.full_name }}
+                </div>
+              </div>
+            </div>
+          </div> 
+          <br> -->
           <button type="button" class="btn btn-danger btn-lg btn-block" id="main-map">Main St</button><br>
           <button type="button" class="btn btn-success btn-lg btn-block" id="kerrytown-map">Kerrytown</button>
         </div>
@@ -54,7 +64,7 @@
           </div>
         </div>
       </div>
-      <span style="opacity: .9 ! important; color:white !important;"> Popular spots with deals today </span>
+      <!-- <span style="opacity: .9 ! important; color:white !important;"> Popular spots with deals today </span> -->
     </div>
 </body>
 </html>

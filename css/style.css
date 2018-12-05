@@ -130,6 +130,7 @@ p.definition1 {
   margin-top: 15%;
   font-size:10px;
   color: white;
+  font-family: 'Abel', sans-serif;
 }
 
 .bar-number {
@@ -138,6 +139,7 @@ p.definition1 {
   left:0;
   font-size: 10px;
   color: white;
+  font-family: 'Abel', sans-serif;
 }
 
 .bar-info {
@@ -146,6 +148,7 @@ p.definition1 {
   font-size: 12px;
   color: white;
   line-height: 0.5;
+  font-family: 'Abel', sans-serif;
 }
 
 p.bar-deals {
@@ -182,6 +185,9 @@ p.mainst-definition {
   font-family: 'Shadows Into Light', cursive;
   font-size: 25px;
   padding: 5%;
+  width: 20%;
+  display:flex;
+  position:relative;
 }
 
 .header-link:hover {
@@ -195,6 +201,9 @@ p.mainst-definition {
   font-family: 'Shadows Into Light', cursive;
   font-size: 25px;
   padding: 5%;
+  width: 20%;
+  display:flex;
+  position:relative;
 }
 
 .map-header-link:hover {
@@ -207,9 +216,13 @@ p.mainst-definition {
 
 #header-navbar {
   position: absolute;
-  top: 10%;
   width: 100%;
-  text-align: center;
+  height: 150px;
+  align-content: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  display: flex;
 }
 
 .navbar-nav > li{
@@ -252,7 +265,7 @@ p.mainst-definition {
   display: block;
   height: 80px; 
   bottom: 5%; 
-  margin-left: 50%; 
+  margin-left: 46%; 
   margin-right: auto;
   z-index: 97;
   opacity: 1;
@@ -267,9 +280,7 @@ p.mainst-definition {
   display: block;
   height: 80px; 
   bottom: 5%; 
-  margin-left: 50%; 
+  margin-left: 46%; 
   margin-right: auto;
   z-index: 2;
 }
-
-
