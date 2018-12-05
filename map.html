@@ -15,32 +15,46 @@
     <style>
       #map {
         margin: auto;
-        top:20%;
-        height: 70%;
-        width: 50%; 
+        top: 5%;
+        height: 100%;
+        width: 100%; 
         z-index: 98;
-        border: solid 5px black;
+        border: solid 2px black;
        }
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   </head>
 
 <body ng-app = "h2a2">
-  <header class="header" id="deals-background">
+  <header class="header">
     <div class="container" id="home">
       <div id="header-navbar">
-        <a class="header-link" data-value="home" href="deals.html">Home</a>
-        <a class="header-link" data-value="map" href="map.html">Locations</a>
-        <a class="header-link" data-value="todaysdeals" href="today.html">Today's Deals</a>  
+        <a class="map-header-link" data-value="home" href="deals.html" style="margin-left:-22%">Home</a>
+        <a class="map-header-link" data-value="map" href="map.html">Map View</a>
+        <a class="map-header-link" data-value="todaysdeals" href="today.html">Today's Deals</a>  
         
       </div>
     </div>
-      <div id="map" ng-controller="mapInfo" ng-init="load()"></div>
-      <div style="position: absolute; left:0%; top:95%; width:100%;text-align: center; background: rgba(0,0,0, .7); z-index: 99; font-weight: 400; font-color: white">
-          <span style="opacity: .9 ! important; color:white !important;"> Popular spots with deals today </span>
-      </div>
   </header>
+    <div class="container" style="padding-top:10%; height: 100%">
+      <div class="row" style="height: 90%">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <br><br><span style="font-family: 'Abel', sans-serif;font-size: 20px">Choose an area to explore:</span><br><br>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="southu-map">South U</button><br>
+          <button type="button" class="btn btn-danger btn-lg btn-block" id="main-map">Main St</button><br>
+          <button type="button" class="btn btn-success btn-lg btn-block" id="kerrytown-map">Kerrytown</button>
+        </div>
+        
+        <div class="col-sm-12 col-md-6 col-lg-8 mb-4">
+          <div id="map" ng-controller="mapInfo" ng-init="load()"></div>
+          <div style="position: absolute; left:0%; top:95%; width:100%;text-align: center; background: rgba(0,0,0, .7); z-index: 99; font-weight: 400; font-color: white">
+          </div>
+        </div>
+      </div>
+      <span style="opacity: .9 ! important; color:white !important;"> Popular spots with deals today </span>
+    </div>
 </body>
 </html>
