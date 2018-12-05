@@ -12,7 +12,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-7pm",
         "deals": ["$3 well drinks, $2 tall beers, $3.50 pitchers"],
-        "placeid": "ChIJeY2nMUSuPIgR23r6dNopAv0"
+        "placeid": "ChIJeY2nMUSuPIgR23r6dNopAv0",
+        "latlng": [42.274967, -83.734831],
+        "website": "https://www.charleysannarbor.com/"
       },
       { 
         "name": "blep",
@@ -25,7 +27,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "2-8pm",
         "deals": ["$2 domestic bottles and shot specials","$4 bombs and $5 pitchers of Miller Lite"],
-        "placeid": "ChIJFcckUUSuPIgRwZ7I82nO19E"
+        "placeid": "ChIJFcckUUSuPIgRwZ7I82nO19E",
+        "latlng": [42.275056, -83.733542],
+        "website": "http://www.theblueleprechaun.com/"
       },
       { 
         "name": "brownjug",
@@ -38,7 +42,9 @@
         "day_arr": [false, true, true, true, true, false, false],
         "hours": "2-5pm",
         "deals": ["$2.75 Miller & Leine's Tall Drafts", "$3.75 Premium Pints and $3.75 Long Islands"],
-        "placeid": "ChIJgxFrSUSuPIgRNMHA3whSTiA"
+        "placeid": "ChIJgxFrSUSuPIgRNMHA3whSTiA",
+        "latlng": [42.275012, -83.734247],
+        "website": "http://www.brownjug-annarbor.com/"
       },
       { 
         "name": "garagebar",
@@ -51,7 +57,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "5-6pm",
         "deals": ["$5 long islands and $4+ select 22oz drafts"],
-        "placeid": "ChIJNcYgzEWuPIgRO70VE2u5f6s"
+        "placeid": "ChIJNcYgzEWuPIgRO70VE2u5f6s",
+        "latlng": [42.274363, -83.734783],
+        "website": "https://garagebarannarbor.com/"
       },
       { 
         "name": "cantina",
@@ -64,7 +72,9 @@
         "day_arr": [false, false, true, true, true, true, false],
         "hours": "5-6pm",
         "deals": ["$3 frozen margaritas and $1.50 Tecate cans"],
-        "placeid": "ChIJeY2nMUSuPIgRbA4Mf8FEcNQ"
+        "placeid": "ChIJeY2nMUSuPIgRbA4Mf8FEcNQ",
+        "latlng": [42.275029, -83.734837],
+        "website": "https://cantinaannarbor.com/"
       }
     ]
   },
@@ -81,7 +91,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
         "deals": ["20% off draft beer"],
-        "placeid": "ChIJpV_z0T2uPIgRoG99QZpngLA"
+        "placeid": "ChIJpV_z0T2uPIgRoG99QZpngLA",
+        "latlng": [42.280863, -83.746940],
+        "website": "http://www.bluetractor.net/bta/a2/index"
       },
       { 
         "name": "arborbrewingco",
@@ -93,8 +105,10 @@
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "All Day",
-        "deals": ["$2.50 large beers", "$4+ glasses of wine", "$16+ bottles of wine"],
-        "placeid": "ChIJja88sj2uPIgRNqaMZdFWKIA"
+        "deals": ["$2.50 large beers, $4+ glasses of wine", "$16+ bottles of wine"],
+        "placeid": "ChIJja88sj2uPIgRNqaMZdFWKIA",
+        "latlng": [42.280508, -83.747715],
+        "website": "https://arborbrewing.com/"
       },
       { 
         "name": "conoroneills",
@@ -107,7 +121,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-7pm",
         "deals": ["$1.50 off draft beers, $1 off all drinks"],
-        "placeid": "ChIJCzlHZzyuPIgRzjVrwaV1lUs"
+        "placeid": "ChIJCzlHZzyuPIgRzjVrwaV1lUs",
+        "latlng": [42.279045, -83.748986],
+        "website": "http://www.conoroneills.com/annarbor/"
       },
       { 
         "name": "jollypumpkin",
@@ -120,7 +136,9 @@
         "day_arr": [false, true, true, true, true, false, false],
         "hours": "4-6pm",
         "deals": ["$1 off drafts, bottles, wines, and cocktails"],
-        "placeid": "ChIJzQ_7XDyuPIgReuoJA541_NA"
+        "placeid": "ChIJzQ_7XDyuPIgReuoJA541_NA",
+        "latlng": [42.279349, -83.748430],
+        "website": "http://brewery.jollypumpkin.com/ann-arbor-untappd/"
       },
       { 
         "name": "blackpearl",
@@ -133,7 +151,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "5-6pm",
         "deals": ["$3 12oz beer and $5 well drinks"],
-        "placeid": "ChIJK3b_WjyuPIgRYJeutjpr3Xo"
+        "placeid": "ChIJK3b_WjyuPIgRYJeutjpr3Xo",
+        "latlng": [42.279589, -83.748923],
+        "website": "https://www.blackpearlannarbor.com/"
       },
       { 
         "name": "ravensclub",
@@ -146,7 +166,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-6pm",
         "deals": ["$7 cocktails","$1 off select draft beer"],
-        "placeid": "ChIJ_4VJrT2uPIgR1IKkJ4D65F8"
+        "placeid": "ChIJ_4VJrT2uPIgR1IKkJ4D65F8",
+        "latlng": [42.280376, -83.748300],
+        "website": "http://theravensclub.com/"
       },
       { 
         "name": "lastword",
@@ -159,7 +181,9 @@
         "day_arr": [false, false, true, true, true, true, true],
         "hours": "5-7pm",
         "deals": ["25% off total bill"],
-        "placeid": "ChIJYZxROD2uPIgRdPRUUywbpo8"
+        "placeid": "ChIJYZxROD2uPIgRdPRUUywbpo8",
+        "latlng": [42.281561, -83.751586],
+        "website": "https://thelastwordbar.com/"
       }
     ]
   },
@@ -176,7 +200,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "4-6pm",
         "deals": ["$2 domestic beers, $3 specialty & import beers","$2.25 well drinks"],
-        "placeid": "ChIJnZvJbBauPIgRhztNmzsq5wc"
+        "placeid": "ChIJnZvJbBauPIgRhztNmzsq5wc",
+        "latlng": [42.283967, -83.747417],
+        "website": "http://www.autbar.com/"
       },
       { 
         "name": "caseys",
@@ -189,7 +215,9 @@
         "day_arr": [false, true, true, true, true, true, false],
         "hours": "3-6pm",
         "deals": ["$1 off draft beers"],
-        "placeid": "ChIJv3u0hBOuPIgRLUh0a7-KhQQ"
+        "placeid": "ChIJv3u0hBOuPIgRLUh0a7-KhQQ",
+        "latlng": [42.288065, -83.744336],
+        "website": "http://caseys-tavern.com/"
       },
       { 
         "name": "lunchroom",
@@ -202,7 +230,9 @@
         "day_arr": [false, false, true, true, true, true, false],
         "hours": "3-6pm",
         "deals": ["$1 off all drinks"],
-        "placeid": "ChIJVVVV1hWuPIgRnnUCKv2f8xM"
+        "placeid": "ChIJVVVV1hWuPIgRnnUCKv2f8xM",
+        "latlng": [42.284798, -83.746457],
+        "website": "https://thelunchrooma2.com/"
       }
     ]
   },
