@@ -108,7 +108,7 @@ app2.controller('allInfo',[ '$scope', '$http', function($scope, $http) {
 
   var days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 
-  $("#" + days[$scope.dayOfWeek]).addClass("btn-primary");
+  $("#" + days[$scope.dayOfWeek]).addClass("btn-warning");
   $("#" + days[$scope.dayOfWeek]).removeClass("btn-dark");
 
   $scope.dayHead = "Today's Deals"
@@ -159,9 +159,9 @@ app2.controller('allInfo',[ '$scope', '$http', function($scope, $http) {
 
 $(document).ready(function(){
   $("div.btn-group button.btn").click(function(){
-    $("div.btn-group").find(".btn-primary").addClass("btn-dark");
-    $("div.btn-group").find(".btn-primary").removeClass("btn-primary");
-    $(this).addClass("btn-primary");
+    $("div.btn-group").find(".btn-warning").addClass("btn-dark");
+    $("div.btn-group").find(".btn-warning").removeClass("btn-warning");
+    $(this).addClass("btn-warning");
     $(this).removeClass("btn-dark");
   });  
 });

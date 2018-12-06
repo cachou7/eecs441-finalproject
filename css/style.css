@@ -26,7 +26,7 @@ body, html {
 
 .header-description{
   position: absolute;
-  top: 28%;
+  top: 25%;
   padding: 2em;
   color: white;
 }
@@ -66,6 +66,15 @@ body, html {
   opacity: 0.75;
 }
 
+#todays-background {
+  background-image: url('../assets/todays_background.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-color: #e9e9e9;
+  opacity: 0.95;
+}
+
 #logo-transparent {
     position: relative;
     width: 20em;
@@ -102,6 +111,25 @@ p.definition1 {
   background:black;
   opacity:0;
   transition:opacity 500ms ease-in-out;
+}
+
+.img-container .today-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(55,93,44, 0.6);
+  opacity:1.5;
+  box-shadow: 0px 0px 28px #888888
+}
+
+.today-overlay span{
+  position:relative;
+  top:15%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
 }
 
 .img-container:hover .overlay{
@@ -214,6 +242,25 @@ p.mainst-definition {
   padding: 5%;
 }
 
+.today-header-link {
+  color:white;
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  padding: 5%;
+  width: 20%;
+  display:flex;
+  position:relative;
+}
+
+.today-header-link:hover {
+  color: white;
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 26px;
+  padding: 5%;
+}
+
 #header-navbar {
   position: absolute;
   width: 100%;
@@ -233,12 +280,14 @@ p.mainst-definition {
 
 .todayLoc {
   text-align: center;
-  font-size: 4em;
+  font-size: 3.5em;
+  font-family: 'Unica One', cursive;
 }
 
 .todayDeals {
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 10%;
+  margin-bottom: 2px;
   color: white;
 }
 
@@ -251,13 +300,18 @@ p.mainst-definition {
 
 }
 .todayLogo {
-  height: 150px; 
+  height:75px; 
   display: block;
-  margin: auto
+  margin: auto;
+  padding-bottom: 5px;
 }
 
 .noMarg {
   margin-bottom: 0;
+}
+
+.topMarg {
+  margin-top: 5;
 }
 
 .scroller{
@@ -283,4 +337,23 @@ p.mainst-definition {
   margin-left: 46%; 
   margin-right: auto;
   z-index: 2;
+}
+
+h5.todaysName {
+  font-size: 25px;
+  font-family: 'Josefin Slab', serif;
+}
+
+#todaysHours {
+  font-size: 11px;
+}
+
+.todaysInfo {
+  font-size: 12px;
+}
+
+#todaysBarDeals {
+  font-size: 14px;
+  color: #ffd11a;
+  font-family: 'Overpass', sans-serif;
 }
