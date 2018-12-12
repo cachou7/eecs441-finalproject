@@ -60,7 +60,7 @@ app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
 
   $scope.southUbarResults = {};
   //$scope.barResults = $http.get("../config.json");
-  $http.get('/eecs493-finalproject/config.json').then(function(response) {
+  $http.get('https://cachou7.github.io/eecs493-finalproject/config.json').then(function(response) {
     //console.log(response.data);
     $scope.southUbarResults = response.data[0]["southU"];
     console.log(response.data);
@@ -75,7 +75,7 @@ app.controller('mainStbarInfo',[ '$scope', '$http', function($scope, $http) {
 
   $scope.mainStbarResults = {};
   //$scope.barResults = $http.get("../config.json");
-  $http.get('/eecs493-finalproject/config.json').then(function(response) {
+  $http.get('https://cachou7.github.io/eecs493-finalproject/config.json').then(function(response) {
     //console.log(response.data);
     $scope.mainStbarResults = response.data[1]["main"];
     console.log(response.data);
@@ -90,7 +90,7 @@ app.controller('kerrytownbarInfo',[ '$scope', '$http', function($scope, $http) {
 
   $scope.kerrytownbarResults = {};
   //$scope.barResults = $http.get("../config.json");
-  $http.get('/eecs493-finalproject/config.json').then(function(response) {
+  $http.get('https://cachou7.github.io/eecs493-finalproject/config.json').then(function(response) {
     //console.log(response.data);
     $scope.kerrytownbarResults = response.data[2]["kerrytown"];
     console.log(response.data);
@@ -119,7 +119,7 @@ app2.controller('allInfo',[ '$scope', '$http', function($scope, $http) {
 
   $scope.kerrytownbarResults = {};
   //$scope.barResults = $http.get("../config.json");
-  $http.get('/eecs493-finalproject/config.json').then(function(response) {
+  $http.get('https://cachou7.github.io/eecs493-finalproject/config.json').then(function(response) {
     //console.log(response.data);
     $scope.southUbarResults = response.data[0]["southU"];
     $scope.mainStbarResults = response.data[1]["main"];
@@ -286,7 +286,7 @@ $scope.locations = {};
     var DoW = today.getDay();
 
     //Get locations
-    $http.get('/eecs493-finalproject/config.json').then(function(response) {
+    $http.get('https://cachou7.github.io/eecs493-finalproject/config.json').then(function(response) {
       var locations = response.data.slice();
       var locPairs = [[0, "southU"],[1, "main"],[2,"kerrytown"]]
 
