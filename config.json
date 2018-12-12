@@ -6,7 +6,7 @@
         "full_name": "Good Time Charley's",
         "address": "1140 S University Ave.",
         "phone": "(734)-668-8411",
-        "img_urls": ["https://cachou7.github.iohttps://cachou7.github.io/eecs493-finalproject/assets/charleys.jpg","https://cachou7.github.io/eecs493-finalproject/assets/charleys2.jpg", "https://cachou7.github.io/eecs493-finalproject/assets/charleys3.jpg"],
+        "img_urls": ["https://cachou7.github.io/eecs493-finalproject/assets/charleys.jpg","https://cachou7.github.io/eecs493-finalproject/assets/charleys2.jpg", "https://cachou7.github.io/eecs493-finalproject/assets/charleys3.jpg"],
         "logo": "https://cachou7.github.io/eecs493-finalproject/assets/charleys_logo_transparent.png",
         "days": "Monday-Friday",
         "day_arr": [false, true, true, true, true, true, false],
