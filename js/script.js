@@ -60,7 +60,7 @@ app.controller('southUbarInfo',[ '$scope', '$http', function($scope, $http) {
 
   $scope.southUbarResults = {};
   //$scope.barResults = $http.get("../config.json");
-  $http.get('http://localhost:8000/config.json').then(function(response) {
+  $http.get('/config.json').then(function(response) {
     //console.log(response.data);
     $scope.southUbarResults = response.data[0]["southU"];
     console.log(response.data);
