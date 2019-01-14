@@ -6,4 +6,4 @@ Run on command line:
 Run in browser:
  http://localhost:8000/index.html
 
- All img sources listed in sources.txt
+All img sources listed in sources.txt
